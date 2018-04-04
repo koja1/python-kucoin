@@ -27,6 +27,7 @@ class Client(object):
     TRANSFER_STATUS_CANCELLED = 'CANCEL'
     TRANSFER_STATUS_PENDING = 'PENDING'
     TRANSFER_STATUS_FINISHED = 'FINISHED'
+    TRANSFER_STATUS_PROCESSING = 'PROCESSING'
 
     RESOLUTION_1MINUTE = '1'
     RESOLUTION_5MINUTES = '5'
@@ -846,7 +847,7 @@ class Client(object):
 
         :param coin: Name of coin
         :type coin: string
-        :param status: optional - Status of withdrawal (FINISHED, CANCEL, PENDING)
+        :param status: optional - Status of withdrawal (FINISHED, CANCEL, PENDING, PROCESSING)
         :type status: string
         :param limit: optional - Number of transactions
         :type limit: int
